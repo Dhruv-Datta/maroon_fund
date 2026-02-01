@@ -1,0 +1,2 @@
+initial_capital,final_capital,total_return,cash,cash_pct,position_value,position_pct,num_positions,num_trades,buy_trades,sell_trades,buy_size_pct,sell_base_pct,sell_formula,Strategy
+100000.0,166634.59135767192,0.6663459135767191,81278.17870894095,48.77629431363494,85356.41264873097,51.223705686365065,1,58,32,26,0.05,150.0,cap,Optimized
