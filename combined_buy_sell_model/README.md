@@ -1,6 +1,6 @@
 # Combined Buy & Sell Side Model
 
-This folder contains the combined trading system that integrates both buy and sell side models.
+This folder contains the combined trading system that integrates both buy and sell side models. Ticker and date range are read from **x_utilities/utils.csv**.
 
 ## 📁 File Structure
 
@@ -25,9 +25,9 @@ python 1_Train_Models.py
 
 This will:
 - Load buy side training data from `../1_buyside_model/training_input.csv`
-- Load sell side training data from `../2_sellside_model/nvda_sell_signals.csv`
+- Load sell side training data from `../2_sellside_model/sell_signals/{ticker}_sell_signals.csv` for each ticker in `x_utilities/utils.csv`
 - Train both models with proper hyperparameter tuning
-- Save models as `buy_model.joblib` and `sell_model.joblib`
+- Save per-ticker models (e.g. `{ticker}_buy_model.joblib`, `{ticker}_sell_model.joblib`)
 
 ### Step 2: Run Combined Analysis
 ```bash
@@ -65,7 +65,7 @@ This will:
 The models use the existing training CSV files:
 
 - **Buy Side**: `../1_buyside_model/training_input.csv`
-- **Sell Side**: `../2_sellside_model/nvda_sell_signals.csv`
+- **Sell Side**: `../2_sellside_model/sell_signals/{ticker}_sell_signals.csv` (one CSV per ticker; tickers come from `x_utilities/utils.csv`)
 
 These files contain pre-computed features and labeled targets, ensuring accurate model training.
 
