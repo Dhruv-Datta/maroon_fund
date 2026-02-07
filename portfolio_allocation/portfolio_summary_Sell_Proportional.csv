@@ -1,2 +1,0 @@
-initial_capital,final_capital,total_return,cash,cash_pct,position_value,position_pct,num_positions,num_trades,buy_trades,sell_trades,Strategy
-100000.0,148700.32094254627,0.4870032094254627,69123.30727393147,46.484975174087765,79577.0136686148,53.51502482591223,1,61,35,26,Sell Proportional
