@@ -1,0 +1,7 @@
+ticker: NVDA
+train_start_date: "2024-04-19"
+train_end_date: "2025-01-22"
+test_start_date: "2024-04-19"
+test_end_date: "2026-02-07"
+buy_threshold: 0.80
+sell_threshold: 0.80

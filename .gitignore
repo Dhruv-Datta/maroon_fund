@@ -2,3 +2,10 @@
 .venv/
 venv/
 env/
+
+# ---- Build / cache ----
+__pycache__/
+*.pyc
+
+# ---- Backtest outputs ----
+combined_buy_sell_model/backtest/output/
