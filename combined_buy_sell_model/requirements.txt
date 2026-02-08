@@ -8,3 +8,6 @@ plotly>=5.18
 yfinance>=0.2
 ta>=0.11
 scipy>=1.11
+PyYAML>=6.0
+mpl-interactions>=0.24
+matplotlib>=3.8
